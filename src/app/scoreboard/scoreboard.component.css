@@ -4,8 +4,16 @@
 
   .text-center{
     text-align: center;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
   }
   
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+  }
+
   .panel-table .panel-body .table-bordered{
     border-style: none;
     margin:0;
