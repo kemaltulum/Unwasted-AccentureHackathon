@@ -4,10 +4,6 @@
    }
    
    
-   div h3 span{
-        color : #FFF;
-   }
-   
    div span {
         font-weight: 200;
    }
@@ -41,7 +37,7 @@
        border-radius: 50%;
        width: 175px;
        height: 175px;
-       border: 4px solid #FFF;
+       border: 4px solid #7b1fa2;
        margin: 10px;
    }
    
@@ -79,7 +75,7 @@
        border: none;
        padding: 25px;
        padding-left: 10px;
-       border-bottom: 1px solid #CCC;
+       border-bottom: 1px solid #7b1fa2;
        margin-bottom: 10px;
        outline: none;
        -webkit-box-shadow: none !important;
@@ -118,7 +114,7 @@
    }
    
    .line{
-       border-bottom : 1px solid #ffffff;
+       border-bottom : 4px solid #7b1fa2;
    }
    
    
