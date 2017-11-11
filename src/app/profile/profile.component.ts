@@ -1,3 +1,4 @@
+import { UserComponent } from './../user/user.component';
 import { DataService } from './../services/data.service';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormControl, NgForm } from '@angular/forms';
@@ -23,7 +24,8 @@ export class ProfileComponent implements OnInit {
   }
 
   onRegisterFormSubmit(form: NgForm) {
-    console.log(form);
+    this.dataService.setUserProfile(form.value.username,
+      form.value.email, form.value.gender, form.value.eggAllergy, form.value.glutenAllergy, form.value.cornAllergy);
   }
 
 }
