@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+body{
+    margin: 0;
+    padding: 0;
+}
 .font-primary{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -25,3 +31,14 @@
     font-size: 1.4em;
 }
 
+.text-right{
+    text-align: right;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.menu-icon{
+    font-size: 1.4em;
+}
