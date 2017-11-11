@@ -14,7 +14,11 @@ export class DataService {
 
   userProfile = {
     'username' : '',
-    'mail' : ''
+    'email' : '',
+    'gender': '',
+    'eggAllergy': '',
+    'glutenAllergy': '',
+    'cornAllergy': '',
   };
   sampleMenuImages = [
       './assets/menu1.jpg',
@@ -25,8 +29,18 @@ export class DataService {
 
   constructor() { }
 
+<<<<<<< HEAD
   setUserProfile(name, emai) {
     this.userProfile.username = name;
+=======
+  setUserProfile(username, email, gender, eggAllergy, glutenAllergy, cornAllergy) {
+    this.userProfile.username = username;
+    this.userProfile.email = email;
+    this.userProfile.gender = gender;
+    this.userProfile.eggAllergy = eggAllergy;
+    this.userProfile.glutenAllergy = glutenAllergy;
+    this.userProfile.cornAllergy = cornAllergy;
+>>>>>>> d569b84354202d7cbbdc903c5cf09103d5df78a3
   }
 
   getFoodName(id) {
