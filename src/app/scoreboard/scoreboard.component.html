@@ -1,3 +1,55 @@
-<p>
-  scoreboard works!
-</p>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav class="example-sidenav">
+    <ul>
+      <li [routerLink]="['/feedback', 0]">
+        Rate your experience!</li>
+    </ul>
+
+  </mat-sidenav>
+  <div class="container" style="padding:0;margin:0">
+
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <div role="button" aria-label="open sidebar" tabindex="0" class="menu-icon" type="button" mat-button (click)="sidenav.open()">☰
+        </div>
+        <span class="example-spacer"></span>
+        <span class="text-right">Unwasted</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+</mat-sidenav-container>
+<h1 class="text-center">High Scores</h1>
+<img src="./../../assets/Trophy.jpg" >
+<div class="panel-body">
+  <table class="table table-striped table-bordered table-list">
+    <tbody>
+      <tr>
+        <td class="hidden-xs">1</td>
+        <td>1</td>
+        <td>Kemal Tulum</td>
+        <td>500</td>
+      </tr>
+
+      <tr>
+        <td class="hidden-xs">1</td>
+        <td>2</td>
+        <td>Furkan Yalçın</td>
+        <td>400</td>
+      </tr>
+
+      <tr>
+        <td class="hidden-xs">1</td>
+        <td>3</td>
+        <td>Nazmican Çalık</td>
+        <td>300</td>
+      </tr>
+
+      <tr>
+        <td class="hidden-xs">1</td>
+        <td>4</td>
+        <td>Berkay Acar</td>
+        <td>200</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
