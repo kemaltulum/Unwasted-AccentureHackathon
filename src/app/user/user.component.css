@@ -1,8 +1,20 @@
-      *{
-       font-family: 'Raleway', sans-serif;
-       
-   }
-   
+
+
+    .profile-top{
+        background-color: #e0e2e5;
+    }
+   .outter{
+    padding: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+    .shrink{
+        margin: 4px;
+        padding: 4px;
+    }
    
    div span {
         font-weight: 200;
@@ -118,13 +130,7 @@
    }
    
    
-   .outter{
-       padding: 0px;
-       border: 1px solid rgba(255, 255, 255, 0.29);
-       border-radius: 50%;
-       width: 200px;
-       height: 200px;
-   }
+   
    
    .profile-usermenu {
     margin-top: 30px;

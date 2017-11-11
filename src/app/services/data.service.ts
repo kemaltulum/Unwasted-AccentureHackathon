@@ -9,6 +9,10 @@ export class DataService {
     'Salata/Meyve'
   ];
 
+  userProfile = {
+    'username' : '',
+    'mail' : ''
+  };
   sampleMenuImages = [
       './assets/menu1.jpg',
       './assets/menu2.jpg',
@@ -18,6 +22,10 @@ export class DataService {
   ];
 
   constructor() { }
+
+  setUserProfile(name, emai){
+    this.userProfile.username = name;
+  }
 
   getFoodName(id) {
     return this.sampleMenu;
