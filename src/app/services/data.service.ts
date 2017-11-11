@@ -35,7 +35,6 @@ export class DataService {
     this.userProfile.eggAllergy = eggAllergy;
     this.userProfile.glutenAllergy = glutenAllergy;
     this.userProfile.cornAllergy = cornAllergy;
-
   }
 
   getFoodName(id) {
