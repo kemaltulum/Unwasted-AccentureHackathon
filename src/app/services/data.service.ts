@@ -2,12 +2,15 @@ import { EventEmitter, Output, Injectable} from '@angular/core';
 
 export class DataService {
 
+  userScore = 0;
+  
   sampleMenu = [
     'Yoğurt Çorbası',
-    'Etli Türlü',
+    'Adana Kebap',
     'Bulgur Pilavı',
     'Salata/Meyve'
   ];
+
 
   userProfile = {
     'username' : '',

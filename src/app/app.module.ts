@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material';
-import { FormsModule } from '@angular/forms';
+import { MatToolbarModule, MatSelectModule, MatInputModule, MatButtonModule } from '@angular/material';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { DataService } from './services/data.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -31,7 +31,12 @@ import { ProfileComponent } from './profile/profile.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    FormsModule
+    FormsModule,
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
