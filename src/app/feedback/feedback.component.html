@@ -16,7 +16,7 @@
     </div>
 
     <div class="row">
-        <div class="col-xs-12" align="center">
+        <div class="col-xs-12 question-title" align="center">
             Did you like it?
         </div>
     </div>
@@ -30,14 +30,14 @@
         </div>
     </div>
 
-    <div class="row waste-container">
+    <div class="row question-title">
         <div class="col-xs-12" align="center">
             What portion of the meal have you consumed?
         </div>
     </div>
 
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 like-buttons">
             <div id="slidecontainer">
                 <input type="range" min="1" max="6" value="3" class="slider" id="myRange">
             </div>
@@ -45,8 +45,10 @@
     </div>
 
 
-    <div class="row waste-eval">
-
+    <div class="row ">
+        <div class="col-xs-10 col-xs-offset-1 btn btn-primary go-next" (click) = "goNext()">
+            I did not take this!
+        </div>
     </div>
 
 </div>

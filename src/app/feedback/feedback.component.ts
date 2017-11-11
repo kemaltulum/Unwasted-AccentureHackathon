@@ -28,4 +28,8 @@ export class FeedbackComponent implements OnInit {
   this.foodImageSource = this.dataService.getImageSrc(this.menuId);  
   }
 
+  goNext(){
+    
+  }
+
 }
