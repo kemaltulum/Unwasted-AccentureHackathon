@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material';
+import { MatSidenavModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 
 import { DataService } from './services/data.service';
@@ -29,6 +30,7 @@ import { ProfileComponent } from './profile/profile.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatSidenavModule,
     FormsModule
   ],
   providers: [DataService],

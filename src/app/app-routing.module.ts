@@ -10,7 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'user', component: UserComponent},
-  { path: 'feedback', component: FeedbackComponent},
+  { path: 'feedback/:id', component: FeedbackComponent},
   { path: 'profile', component: ProfileComponent},
   { path: '**', component: HomeComponent}
 ];

@@ -1,4 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-feedback',
@@ -8,9 +11,21 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class FeedbackComponent implements OnInit {
 
-  constructor() { }
+  menuId;
+
+  foodImageSource;
+  foodName;
+
+  constructor(private route: ActivatedRoute,
+              private dataService: DataService) { }
 
   ngOnInit() {
+  this.route.params.subscribe(params => {
+      this.menuId = +params['id'];
+    });
+
+  this.foodName = this.dataService.getFoodName(this.menuId);
+  this.foodImageSource = this.dataService.getImageSrc(this.menuId);  
   }
 
 }

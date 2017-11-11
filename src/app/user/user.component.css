@@ -3,6 +3,11 @@
     .profile-top{
         background-color: #e0e2e5;
     }
+
+    .username{
+        color: black;
+    }
+
    .outter{
     padding: 0px;
     border: 1px solid rgba(255, 255, 255, 0.29);
@@ -41,6 +46,24 @@
        padding: auto;
    }
    
+   .score-label-container{
+        font-size: 1.4em;
+   }
+
+   .score-row{
+       background-color: #50c758
+   }
+
+   .score-text{
+       font-weight: bold;
+   }
+   .overview-lunch{
+       background-color: #d89b69;
+   }
+
+   .overview-dinner{
+       background-color: #a4c430;
+   }
    @media (max-width: 767px) {
        
    }
@@ -53,85 +76,10 @@
        margin: 10px;
    }
    
-   .follow{
-       height: 80px;
-       cursor:pointer;
-   }
-   
-   .follow:hover {
-       background-color:#F22F26;
-       height: 80px;
-       cursor:pointer;
-   }
-   
-   .login_control{
-       background-color:#FFF;
-       padding:10px;
-       
-   }
-   
-   .control {
-       color:#000;
-       margin:10px;
-   }
-   
-   .label {
-       
-       font-size: 18px;
-       font-weight: 500;
-   }
-   
-   .form-control{
-       color: #000000 !important;
-       font-size: 25px;
-       border: none;
-       padding: 25px;
-       padding-left: 10px;
-       border-bottom: 1px solid #7b1fa2;
-       margin-bottom: 10px;
-       outline: none;
-       -webkit-box-shadow: none !important;
-       -moz-box-shadow: none !important;
-       box-shadow: none !important;
-   }
-   
-   .form-control:focus{
-       border-radius: 0px;
-       border-bottom: 1px solid #FC563B;
-       margin-bottom: 10px;
-       outline: none;
-       -webkit-box-shadow: none !important;
-       -moz-box-shadow: none !important;
-       box-shadow: none !important;
-   }
-   .btn-orange{
-       background-color: #FC563B;
-       border-radius: 0px;
-       margin: 5px;
-       padding: 5px;
-       width: 150px;
-       font-size: 20px;
-       font-weight: inherit;
-   }
-   
-   .btn-orange:hover {
-       background-color: #F22F26;
-       border-radius: 0px;
-       margin: 5px;
-       padding: 5px;
-       width: 150px;
-       font-size: 20px;
-       font-weight: inherit;
-       color:#FFF !important;
-   }
-   
+
    .line{
        border-bottom : 4px solid #7b1fa2;
    }
    
    
    
-   
-   .profile-usermenu {
-    margin-top: 30px;
-  }

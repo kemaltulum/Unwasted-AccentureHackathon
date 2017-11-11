@@ -1,46 +1,70 @@
-<div class="container">
-  <mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <div role="button" aria-label="open sidebar" tabindex="0" class="menu-icon">☰
+<mat-sidenav-container>
+  <mat-sidenav #sidenav class="example-sidenav">
+    <ul>
+      <li 
+      [routerLink]="['/feedback', 0]">
+      Rate your experience!</li>
+    </ul>
+
+  </mat-sidenav>
+  <div class="container">
+
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <div role="button" aria-label="open sidebar" tabindex="0" class="menu-icon" type="button" mat-button (click)="sidenav.open()">☰
+        </div>
+        <span class="example-spacer"></span>
+        <span class="text-right">Unwasted</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <div class="row profile-top">
+      <div class="col-md-12 col-xs-12" align="center">
+        <div class="outter">
+          <img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="image-circle" />
+        </div>
+        <h1 class="username shrink font-l">Sarah Lucian</h1>
       </div>
-      <span class="example-spacer"></span>
-      <span class="text-right">Unwasted</span>
-    </mat-toolbar-row>
-  </mat-toolbar>
+    </div>
 
-  <div class="row profile-top">
-    <div class="col-md-12 col-xs-12" align="center">
-      <div class="outter">
-        <img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="image-circle" />
+    <div class="row score-label-container" align="center">
+      <div class="col-xs-12 score-row">
+        <span class="score-text">
+          Score
+        </span>
+        <br>
+        <span class="score-label font-m">
+          0
+        </span>
       </div>
-      <h1 class="shrink font-l">Sarah Lucian</h1>
+    </div>
+
+    <div class="row score-label-container" align="center">
+      <div class="col-xs-6 overview-lunch">
+        <span class="score-text">
+          Lunch
+        </span>
+        <br>
+        <span class="score-label font-m">
+          0
+        </span>
+      </div>
+
+      <div class="col-xs-6 overview-dinner">
+        <span class="score-text">
+          Dinner
+        </span>
+        <br>
+        <span class="score-label font-m">
+          0
+        </span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12" align="center">
+        Overview
+      </div>
     </div>
   </div>
-
-  <div class="row col-md-6 col-xs-12 score-row" align="center">
-    <h3>
-      275
-      <br/>
-      <span>Score</span>
-    </h3>
-  </div>
-
-  <div class="row overview-row">
-    <div class="col-md-6 col-xs-6" align="center">
-      <h3>
-        20
-        <br/>
-        <span>Lunch</span>
-      </h3>
-    </div>
-    <div class="col-md-6 col-xs-6" align="center">
-      <h3>
-        14
-        <br/>
-        <span>Dinner</span>
-      </h3>
-    </div>
-  </div>
-
-
-</div>
+</mat-sidenav-container>
