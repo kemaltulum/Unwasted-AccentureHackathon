@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+.font-primary{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.color-primary{
+    background-color: #b73838;
+}
+
+
+.font-xs{
+    font-size: 0.8em;
+}
+
+.font-s{
+    font-size: 1em;
+}
+
+.font-m{
+    font-size: 1.2em;
+}
+
+.font-xl{
+    font-size: 1.4em;
+}
+
