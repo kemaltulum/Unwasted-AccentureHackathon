@@ -1,9 +1,8 @@
-import { EventEmitter, Output, Injectable} from '@angular/core';
+import { EventEmitter, Output, Injectable } from '@angular/core';
 
 export class DataService {
 
   userScore = 0;
-  
   sampleMenu = [
     'Yoğurt Çorbası',
     'Adana Kebap',
@@ -13,18 +12,18 @@ export class DataService {
 
 
   userProfile = {
-    'username' : '',
-    'email' : '',
+    'username': '',
+    'email': '',
     'gender': '',
     'eggAllergy': '',
     'glutenAllergy': '',
     'cornAllergy': '',
   };
   sampleMenuImages = [
-      './assets/menu1.jpg',
-      './assets/menu2.jpg',
-      './assets/menu3.jpg',
-      './assets/menu4.jpg'
+    './assets/menu1.jpg',
+    './assets/menu2.jpg',
+    './assets/menu3.jpg',
+    './assets/menu4.jpg'
   ];
 
   constructor() { }
@@ -46,3 +45,4 @@ export class DataService {
     return this.sampleMenuImages[id];
   }
 }
+

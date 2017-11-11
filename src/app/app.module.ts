@@ -14,6 +14,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { FoodScoreComponent } from './components/food-score/food-score.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ScoreboardComponent } from './scoreboard/scoreboard.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ProfileComponent } from './profile/profile.component';
     FoodScoreComponent,
     ToolbarComponent,
     ProfileComponent,
+    ScoreboardComponent,
   ],
   imports: [
     BrowserModule,
