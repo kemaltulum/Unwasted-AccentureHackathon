@@ -8,6 +8,7 @@ import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FoodScoreComponent } from './components/food-score/food-score.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FoodScoreComponent } from './components/food-score/food-score.component
     HomeComponent,
     FeedbackComponent,
     FoodScoreComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
