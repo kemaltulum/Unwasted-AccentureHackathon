@@ -2,14 +2,25 @@
     padding: 8px;
 }
 
-.food-image{
-
+.container{
+    padding: 0;
 }
 
+.row{
+    margin: 0;
+}
 .food-name{
     font-weight: bold;
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 1.3em;
+}
+
+.food-image{
+    margin-top: 15px;
+}
+
+.food-image-img{
+    height: 30vh;
 }
 
 .like-buttons{
@@ -53,6 +64,7 @@
 
 .question-title{
     font-size: 1.2em;
+    font-weight: bold;
     padding: 4px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -66,5 +78,13 @@
 .go-next{
     position: fixed;
     bottom: 10px;
+}
+
+.default{
+    opacity: 0.6;
+}
+
+.highlight{
+    opacity: 1;
 }
 

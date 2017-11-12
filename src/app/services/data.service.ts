@@ -19,6 +19,7 @@ export class DataService {
     'glutenAllergy': '',
     'cornAllergy': '',
   };
+
   sampleMenuImages = [
     './assets/menu1.jpg',
     './assets/menu2.jpg',
@@ -37,12 +38,20 @@ export class DataService {
     this.userProfile.cornAllergy = cornAllergy;
   }
 
+  getUserProfile(){
+    return this.userProfile;
+  }
+  
   getFoodName(id) {
     return this.sampleMenu[id];
   }
 
   getImageSrc(id) {
     return this.sampleMenuImages[id];
+  }
+
+  increseScore(score) {
+    this.userScore += score;
   }
 }
 

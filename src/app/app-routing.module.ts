@@ -12,7 +12,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'user', component: UserComponent },
   { path: 'feedback/:id', component: FeedbackComponent },
-  { path: 'profile', component: ProfileComponent },
+  { path: '', component: ProfileComponent },
   { path: 'scoreboard', component: ScoreboardComponent },
   { path: '**', component: HomeComponent }
 ];
