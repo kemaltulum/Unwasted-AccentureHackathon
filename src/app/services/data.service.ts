@@ -62,10 +62,10 @@ export class DataService {
     this.userScore += score;
   }
 
-  increaseLunchOrDinner(){
+  increaseLunchOrDinner() {
     let date = new Date();
     let hour = date.getHours();
-    if(hour >0 && hour < 12){
+    if(hour >0 && hour < 12) {
       this.lunch += 1;
     } else if(hour > 14){
       this.dinner += 1;
