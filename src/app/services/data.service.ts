@@ -2,6 +2,8 @@ import { EventEmitter, Output, Injectable } from '@angular/core';
 
 export class DataService {
 
+  lunch = 0;
+  dinner = 0;
   userScore = 0;
   sampleMenu = [
     'Yoğurt Çorbası',
@@ -38,10 +40,14 @@ export class DataService {
     this.userProfile.cornAllergy = cornAllergy;
   }
 
+  getScore(){
+    return this.userScore;
+  }
+
   getUserProfile(){
     return this.userProfile;
   }
-  
+
   getFoodName(id) {
     return this.sampleMenu[id];
   }
@@ -52,6 +58,24 @@ export class DataService {
 
   increseScore(score) {
     this.userScore += score;
+  }
+
+  increaseLunchOrDinner(){
+    let date = new Date();
+    let hour = date.getHours();
+    if(hour >0 && hour < 12){
+      this.lunch += 1;
+    } else if(hour > 14){
+      this.dinner += 1;
+    }
+  }
+
+  getLunch(){
+    return this.lunch;
+  }
+
+  getDinner(){
+    return this.dinner;
   }
 }
 

@@ -11,12 +11,18 @@ import { DataService } from '../services/data.service';
 })
 export class UserComponent implements OnInit {
 
+  score;
+  lunch;
+  dinner;
   userProfile;
 
   constructor(private dataService : DataService) { }
 
   ngOnInit() {
+    this.score = this.dataService.getScore();
     this.userProfile = this.dataService.getUserProfile();
+    this.lunch = this.dataService.getLunch();
+    this.dinner = this.dataService.getDinner();
     console.log(this.userProfile);
   }
 

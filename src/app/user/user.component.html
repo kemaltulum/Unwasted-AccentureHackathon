@@ -1,29 +1,12 @@
-<mat-sidenav-container>
-  <mat-sidenav #sidenav class="example-sidenav">
-    <ul>
-      <li 
-      [routerLink]="['/feedback', 0]">
-      Rate your experience!</li>
-    </ul>
 
-  </mat-sidenav>
   <div class="container">
-
-    <mat-toolbar color="primary">
-      <mat-toolbar-row>
-        <div role="button" aria-label="open sidebar" tabindex="0" class="menu-icon" type="button" mat-button (click)="sidenav.open()">☰
-        </div>
-        <span class="example-spacer"></span>
-        <span class="text-right">Unwasted</span>
-      </mat-toolbar-row>
-    </mat-toolbar>
 
     <div class="row profile-top">
       <div class="col-md-12 col-xs-12" align="center">
         <div class="outter">
           <img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="image-circle" />
         </div>
-        <h1 class="username shrink font-l">Sarah Lucian</h1>
+        <h1 class="username shrink font-l">{{userProfile.username}}</h1>
       </div>
     </div>
 
@@ -34,7 +17,7 @@
         </span>
         <br>
         <span class="score-label font-m">
-          0
+        {{score}}
         </span>
       </div>
     </div>
@@ -46,7 +29,7 @@
         </span>
         <br>
         <span class="score-label font-m">
-          0
+          {{lunch}}
         </span>
       </div>
 
@@ -56,7 +39,7 @@
         </span>
         <br>
         <span class="score-label font-m">
-          0
+          {{dinner}}
         </span>
       </div>
     </div>
@@ -67,4 +50,3 @@
       </div>
     </div>
   </div>
-</mat-sidenav-container>

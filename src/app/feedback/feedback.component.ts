@@ -55,27 +55,27 @@ export class FeedbackComponent implements OnInit {
       }
     }
 
-    console.log(this.liked);
-    console.log(this.doesntLike);
-
   }
 
   changeWaste(event){
     this.range = event;
   }
 
-  goNext() {
-    if(this.liked || this.doesntLike){
-      this.dataService.increseScore(5);
+  goNext(data) {
+    this.dataService.increseScore(5);
+    if(data !== 2){
+      this.dataService.increseScore((this.range.parseInt()) * -5);
     }
-    this.dataService.increseScore((this.range - 5) * -5);
+    
+    
     let newId;
+    
     if (this.menuId === 3) {
       this.router.navigate(['/user']);
     } else {
       newId = this.menuId + 1;
       this.router.navigate(['/feedback', this.menuId + 1]);
-    } 
+    }
   }
 
 }

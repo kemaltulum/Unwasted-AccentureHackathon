@@ -1,1 +1,23 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+        <mat-sidenav #sidenav class="example-sidenav">
+          <ul>
+            <li 
+            [routerLink]="['/feedback', 0]">
+            Rate your experience!</li>
+          </ul>
+      
+        </mat-sidenav>
+        <div class="container">
+      
+          <mat-toolbar color="primary">
+            <mat-toolbar-row>
+              <div role="button" aria-label="open sidebar" tabindex="0" class="menu-icon" type="button" mat-button (click)="sidenav.open()">☰
+              </div>
+              <span class="example-spacer"></span>
+              <span class="text-right">Unwasted</span>
+            </mat-toolbar-row>
+          </mat-toolbar>
+      
+          <router-outlet></router-outlet>
+        </div>
+      </mat-sidenav-container>
