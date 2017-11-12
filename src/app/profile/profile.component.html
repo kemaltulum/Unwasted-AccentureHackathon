@@ -1,4 +1,11 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Welcome To Unwasted</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
 <div class="container">
+
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
       <form (ngSubmit)="onRegisterFormSubmit(f)" #f="ngForm">
@@ -20,6 +27,7 @@
                   <option>Female</option>
                 </select>
         </div>
+        <label for="sel1">Please select your allergy types</label>
         <div class="form-group">
           <div class="checkbox">
             <label><input type="checkbox" value="" ngModel name="glutenAllergy">Gluten</label>
