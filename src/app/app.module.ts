@@ -15,6 +15,7 @@ import { FoodScoreComponent } from './components/food-score/food-score.component
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
+import { HelpComponent } from './help/help.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ScoreboardComponent } from './scoreboard/scoreboard.component';
     ToolbarComponent,
     ProfileComponent,
     ScoreboardComponent,
+    HelpComponent,
   ],
   imports: [
     BrowserModule,

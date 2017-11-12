@@ -2,3 +2,14 @@
     padding: 0;
     margin: 0;
 }
+
+.side-list{
+    padding: 4px;
+}
+
+.side-list-item{
+    padding: 6px;
+    list-style-type: none;
+    line-height: 1.5em;
+    font-size: 1.3em;
+}

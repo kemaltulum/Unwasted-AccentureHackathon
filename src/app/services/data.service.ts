@@ -2,6 +2,7 @@ import { EventEmitter, Output, Injectable } from '@angular/core';
 
 export class DataService {
 
+  isDemo = false;
   lunch = 0;
   dinner = 0;
   userScore = 0;

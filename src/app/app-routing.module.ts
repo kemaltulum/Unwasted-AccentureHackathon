@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
+import { HelpComponent } from './help/help.component';
 
 
 const appRoutes: Routes = [
@@ -14,6 +15,7 @@ const appRoutes: Routes = [
   { path: 'feedback/:id', component: FeedbackComponent },
   { path: '', component: ProfileComponent },
   { path: 'scoreboard', component: ScoreboardComponent },
+  { path: 'help', component: HelpComponent },
   { path: '**', component: HomeComponent }
 ];
 

@@ -22,6 +22,10 @@ export class FeedbackComponent implements OnInit {
   foodImageSource;
   foodName;
 
+  firstButton = false;
+  secondButton = false;
+  thirdButton = false;
+  
   constructor(private route: ActivatedRoute, private router: Router,
               private dataService: DataService) { }
 
@@ -37,7 +41,32 @@ export class FeedbackComponent implements OnInit {
   }
 
   this.foodName = this.dataService.getFoodName(this.menuId);
-  this.foodImageSource = this.dataService.getImageSrc(this.menuId);  
+  this.foodImageSource = this.dataService.getImageSrc(this.menuId);
+  if(this.dataService.isDemo){
+    demo();
+  }  
+  }
+
+  demo(){
+    let randomNum = Math.floor((Math.random() * 6) + 1);
+    setTimeout(() => {
+      this.range = randomNum;
+    }, 200);
+
+    if(id === 2){
+      setTimeout(() => {
+        randomNum = Math.floor((Math.random() * 6) + 1);
+        this.range = randomNum;
+      } ,600);
+    }
+
+    setTimeout(() => {
+      randomNum = Math.floor((Math.random() * 6) + 1);
+      this.range = randomNum;
+    } ,1000);
+
+    randomNum = Math.floor((Math.random() * 2) + 1);
+    
   }
 
   likeOrNotLike(data){
@@ -64,18 +93,21 @@ export class FeedbackComponent implements OnInit {
   goNext(data) {
     this.dataService.increseScore(5);
     if(data !== 2){
-      this.dataService.increseScore((this.range.parseInt()) * -5);
+      this.dataService.increseScore(parseInt(this.range, 10) * 5);
     }
-    
-    
     let newId;
-    
     if (this.menuId === 3) {
+      this.dataService.increaseLunchOrDinner();
       this.router.navigate(['/user']);
     } else {
       newId = this.menuId + 1;
-      this.router.navigate(['/feedback', this.menuId + 1]);
+      this.router.navigate(['/feedback', newId]);
     }
+  }
+
+  demo(){
+    this.router.navigate(['feedback/0']);
+    this.dataService.isDemo = true;
   }
 
 }

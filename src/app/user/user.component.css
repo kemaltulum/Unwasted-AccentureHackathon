@@ -83,10 +83,20 @@
    .score-button{
        position: fixed;
        bottom: 10px;
-       padding: 6px;
+       padding: 10px;
        color: white;
        font-size: 1.4em;
        background-color: rgb(233, 91, 3)
+   }
+
+   .demo-button{
+    position: fixed;
+    bottom: 70px;
+    padding: 10px;
+    color: white;
+    font-size: 1.4em;
+    background-color: rgb(75, 3, 3);
+       
    }
    
    

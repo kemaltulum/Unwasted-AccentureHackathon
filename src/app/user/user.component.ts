@@ -2,12 +2,12 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { DataService } from '../services/data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
 
@@ -16,7 +16,8 @@ export class UserComponent implements OnInit {
   dinner;
   userProfile;
 
-  constructor(private dataService : DataService) { }
+  constructor(private dataService: DataService,
+            private router: Router) { }
 
   ngOnInit() {
     this.score = this.dataService.getScore();

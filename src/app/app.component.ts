@@ -9,4 +9,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 })
 export class AppComponent {
   title = 'app';
+
+  routeChange(){
+    
+  }
 }

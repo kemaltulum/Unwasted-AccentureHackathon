@@ -1,13 +1,16 @@
 <mat-sidenav-container>
         <mat-sidenav #sidenav class="example-sidenav">
-          <ul>
-            <li 
+          <ul class="side-list">
+            <li class="side-list-item" (click) = "sidenav.close()"
+            [routerLink]="['/user']">
+            Profile</li>
+            <li class="side-list-item" (click) = "sidenav.close()"
             [routerLink]="['/feedback', 0]">
             Rate your experience!</li>
-            <li 
-            [routerLink]="['/profile']">
+            <li class="side-list-item" (click) = "sidenav.close()"
+            [routerLink]="['']">
             Add new user!</li>
-            <li 
+            <li class="side-list-item" (click) = "sidenav.close()"
             [routerLink]="['help']">
             Help</li>
           </ul>
