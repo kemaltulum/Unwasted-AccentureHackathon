@@ -16,6 +16,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
 import { HelpComponent } from './help/help.component';
+import { MenuEvaluationComponent } from './menu-evaluation/menu-evaluation.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HelpComponent } from './help/help.component';
     ProfileComponent,
     ScoreboardComponent,
     HelpComponent,
+    MenuEvaluationComponent,
   ],
   imports: [
     BrowserModule,
