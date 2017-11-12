@@ -1,0 +1,14 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Unwasted",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "/",
+    "short_name": "Unwasted",
+    "theme_color": "transparent",
+    "description": "Prevent food waste",
+    "orientation": "portrait",
+    "background_color": "white",
+    "prefer_related_applications": true
+}
