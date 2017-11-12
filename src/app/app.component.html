@@ -1,5 +1,5 @@
-<mat-sidenav-container>
-        <mat-sidenav #sidenav class="example-sidenav">
+<mat-sidenav-container style="background-color: white">
+        <mat-sidenav #sidenav class="example-sidenav bg-menu-color">
           <ul class="side-list">
             <li class="side-list-item" (click) = "sidenav.close()"
             [routerLink]="['/user']">
@@ -24,12 +24,12 @@
         </mat-sidenav>
         <div class="container">
       
-          <mat-toolbar color="primary">
-            <mat-toolbar-row>
+          <mat-toolbar class = "toolbar-border" color="primary">
+            <mat-toolbar-row class = "toolbar-border">
               <div role="button" aria-label="open sidebar" tabindex="0" class="menu-icon" type="button" mat-button (click)="sidenav.open()">☰
               </div>
               <span class="example-spacer"></span>
-              <span class="text-right">Unwasted</span>
+              <img class="img-responsive logo" src="../assets/iconCropped.jpg" alt="Unwasted">
             </mat-toolbar-row>
           </mat-toolbar>
       
