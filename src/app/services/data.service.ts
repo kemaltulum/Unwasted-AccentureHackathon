@@ -58,6 +58,7 @@ export class DataService {
   }
 
   increseScore(score) {
+    console.log(score);
     this.userScore += score;
   }
 

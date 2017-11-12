@@ -46,14 +46,14 @@
 
     <div class="row">
         <div class="col-xs-12 demo-button" align="center"
-        [routerLink]="['/scoreboard']">
+        (click)="demo()">
           DEMO
         </div>
       </div>
 
     <div class="row">
       <div class="col-xs-12 score-button" align="center"
-      (click)="demo()">
+      [routerLink]="['/scoreboard']">
         Scoreboard
       </div>
     </div>

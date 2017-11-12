@@ -43,7 +43,7 @@ export class FeedbackComponent implements OnInit {
   this.foodName = this.dataService.getFoodName(this.menuId);
   this.foodImageSource = this.dataService.getImageSrc(this.menuId);
   if(this.dataService.isDemo){
-    this.demo();
+    //this.demo();
   }  
   }
 
@@ -51,19 +51,19 @@ export class FeedbackComponent implements OnInit {
     let randomNum = Math.floor((Math.random() * 6) + 1);
     setTimeout(() => {
       this.range = randomNum;
-    }, 200);
+    }, 800);
 
     if(this.menuId === 2){
       setTimeout(() => {
         randomNum = Math.floor((Math.random() * 6) + 1);
         this.range = randomNum;
-      } ,600);
+      } ,2600);
     }
 
     setTimeout(() => {
       randomNum = Math.floor((Math.random() * 6) + 1);
       this.range = randomNum;
-    } ,1000);
+    } ,4000);
 
     randomNum = Math.floor((Math.random() * 3) + 1);
     if(randomNum === 1){
@@ -79,6 +79,7 @@ export class FeedbackComponent implements OnInit {
     } else{
       this.goNext(2);
     }
+    console.log(randomNum);
   }
 
   likeOrNotLike(data){
