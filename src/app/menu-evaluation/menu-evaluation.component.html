@@ -1,33 +1,56 @@
-<div class="image-container">
+<div class="container">
   <div class="row">
     <div class="col-xs-6">
-      <img src="./../../assets/menu1.jpg">
+      <img class = "img-responsive" src="./../../assets/menu1.jpg">
     </div>
     <div class="col-xs-6">
-      <img src="./../../assets/menu2.jpg">
+      <img class = "img-responsive" src="./../../assets/menu2.jpg">
     </div>
   </div>
   <div class="row">
     <div class="col-xs-6">
-      <img src="./../../assets/menu3.jpg">
+      <img class = "img-responsive" src="./../../assets/menu3.jpg">
     </div>
     <div class="col-xs-6">
-      <img src="./../../assets/menu4.jpg">
+      <img class = "img-responsive" src="./../../assets/menu4.jpg">
     </div>
   </div>
+
+  <div class="radio-box">
+    <form>
+      <input class="option-input radio" type="radio" name="test" value="yes" />
+      <label >1</label>
+      <input class="option-input radio" type="radio" name="test" value="yes" />
+      <label >2</label>
+      <input class="option-input radio" type="radio" name="test" value="yes" />
+      <label >3</label>
+      <input class="option-input radio" type="radio" name="test" value="yes" />
+      <label >4</label>
+      <input class="option-input radio" type="radio" name="test" value="yes" />
+      <label >5</label>
+    </form>
+  </div>
+
+  <div *ngIf = "success" class="row">
+    <div class="col-xs-12">
+      <div class="alert alert-success text-center">
+        <strong>Congratuiations!</strong> You got 100 points!
+      </div>
+    </div>
+  </div>
+  <div *ngIf = "!success" class="row">
+    <div class="col-xs-12 btn btn-success" (click) = "submit()">
+      Get your point
+    </div>
+  </div>
+  <div *ngIf = "success" class="row">
+    <div class="col-xs-12 btn btn-info" [routerLink]="['/user']">
+      HOME
+    </div>
+  </div>
+  
+
 </div>
 
-<div class="radio-box">
-  <form>
-    <input class="option-input radio" type="radio" name="test" value="yes" />
-    <label >1</label>
-    <input class="option-input radio" type="radio" name="test" value="yes" />
-    <label >2</label>
-    <input class="option-input radio" type="radio" name="test" value="yes" />
-    <label >3</label>
-    <input class="option-input radio" type="radio" name="test" value="yes" />
-    <label >4</label>
-    <input class="option-input radio" type="radio" name="test" value="yes" />
-    <label >5</label>
-  </form>
-</div>
+
+

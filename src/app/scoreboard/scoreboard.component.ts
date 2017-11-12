@@ -6,8 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-scoreboard',
   templateUrl: './scoreboard.component.html',
-  styleUrls: ['./scoreboard.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./scoreboard.component.css']
 })
 export class ScoreboardComponent implements OnInit {
 

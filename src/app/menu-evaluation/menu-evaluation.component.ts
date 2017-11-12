@@ -7,9 +7,15 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class MenuEvaluationComponent implements OnInit {
 
+  success = false;
   constructor() { }
 
   ngOnInit() {
+    
+  }
+
+  submit(){
+    this.success = true;
   }
 
 }
