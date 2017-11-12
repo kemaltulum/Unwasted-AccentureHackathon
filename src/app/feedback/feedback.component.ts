@@ -25,7 +25,7 @@ export class FeedbackComponent implements OnInit {
   firstButton = false;
   secondButton = false;
   thirdButton = false;
-  
+
   constructor(private route: ActivatedRoute, private router: Router,
               private dataService: DataService) { }
 
@@ -43,7 +43,7 @@ export class FeedbackComponent implements OnInit {
   this.foodName = this.dataService.getFoodName(this.menuId);
   this.foodImageSource = this.dataService.getImageSrc(this.menuId);
   if(this.dataService.isDemo){
-    demo();
+    this.demo();
   }  
   }
 
@@ -53,7 +53,7 @@ export class FeedbackComponent implements OnInit {
       this.range = randomNum;
     }, 200);
 
-    if(id === 2){
+    if(this.menuId === 2){
       setTimeout(() => {
         randomNum = Math.floor((Math.random() * 6) + 1);
         this.range = randomNum;
@@ -65,8 +65,20 @@ export class FeedbackComponent implements OnInit {
       this.range = randomNum;
     } ,1000);
 
-    randomNum = Math.floor((Math.random() * 2) + 1);
-    
+    randomNum = Math.floor((Math.random() * 3) + 1);
+    if(randomNum === 1){
+      this.firstButton = true;
+    } else if(randomNum === 2){
+      this.secondButton = true;
+    } else{
+      this.thirdButton = true;
+    }
+
+    if(randomNum <= 2){
+      this.goNext(1);
+    } else{
+      this.goNext(2);
+    }
   }
 
   likeOrNotLike(data){
@@ -98,6 +110,7 @@ export class FeedbackComponent implements OnInit {
     let newId;
     if (this.menuId === 3) {
       this.dataService.increaseLunchOrDinner();
+      this.dataService.isDemo = false;
       this.router.navigate(['/user']);
     } else {
       newId = this.menuId + 1;
@@ -105,9 +118,5 @@ export class FeedbackComponent implements OnInit {
     }
   }
 
-  demo(){
-    this.router.navigate(['feedback/0']);
-    this.dataService.isDemo = true;
-  }
 
 }
