@@ -27,7 +27,7 @@ export class UserComponent implements OnInit {
     console.log(this.userProfile);
   }
 
-  demo(){
+  evaluate(){
     this.router.navigate(["feedback", 0]);
     this.dataService.isDemo = true;
   }
