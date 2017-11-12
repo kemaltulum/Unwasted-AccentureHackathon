@@ -5,7 +5,7 @@
     </div>
     <div class="row">
         <div class="col-xs-12 food-image text-center">
-            <img class="img-thumbnail img-responsive food-image-img" src="{{foodImageSource}}" alt="{{imageName}}">
+            <img class="img-thumbnail img-responsive food-image-img" src="{{foodImageSource}}" alt="{{foodName}}">
         </div>
     </div>
     <div class="row">
@@ -23,17 +23,17 @@
 
     <div class="row">
         <div class="col-xs-2">
-            No waste!
+            Food waste!
         </div>
         <div class="col-xs-2 col-xs-offset-8">
-            Food waste!
+            No waste!
         </div>
     </div>
 
     <div class="row">
         <div class="col-xs-12 like-buttons">
             <div id="slidecontainer">
-                <input type="range" #ref (change)="changeWaste(ref.value)" [(ngModel)]="name" min="1" max="6" value="3" class="slider" id="myRange">
+                <input type="range" #ref (change)="changeWaste(ref.value)" [(ngModel)]="range" min="1" max="6" value="3" class="slider" id="myRange">
             </div>
         </div>
     </div>
