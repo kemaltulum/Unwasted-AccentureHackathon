@@ -1,5 +1,37 @@
-# AccentureHackathon
+# Accenture Digital Hackathon İstanbul 2017 
 
+![](./presentation/thinkhack.jpg)
+
+We are MINIX
+
+* [@kemaltulum](https://github.com/kemaltulum) 
+* [@nazmicancalik](https://github.com/nazmicancalik)
+* [@pxfurkanenes](https://github.com/pxfurkanenes)
+
+## Our Project: Unwasted
+![](./presentation/unwasted.jpg)
+
+**Unwasted**: A gamified mobile service that utilizes students' data and preferences around food choices, campus presence and eating habits to optimize catering firms' food production operations.
+
+We have designed a web application live [here](https://accenturehackathon-8566d.firebaseapp.com/)
+
+### You can watch our exhibitions and download presentation
+
+#### [Exhibition A](./presentation/mobile-app.mp4)
+This is our web application with its features
+
+#### [Exhibition B](./presentation/company_part.mp4)
+This is the dashboard developed to be used by catering firms
+
+#### [Our Presentation](./presentation/Unwasted_Hackathon_Sunumu.pptx)
+You can download it to learn more about our project
+
+### We got the third place in the hackathon
+![](./presentation/accenture-hackathon.jpg)
+
+#### Thanks to Accenture for this great organization
+
+# Project Details
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
 ## Development server
@@ -13,14 +45,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
